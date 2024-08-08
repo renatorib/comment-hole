@@ -38,7 +38,7 @@ export async function replaceTag(
     const { regex } = extensions[fileExt];
     fileContent = fileContent.replace(
       regex(tag),
-      typeof content === "function" ? content() : content
+      "\n" + (typeof content === "function" ? content() : content) + "\n"
     );
   }
 

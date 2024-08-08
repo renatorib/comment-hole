@@ -1,7 +1,7 @@
 {
-  "name": "replace-tag",
+  "name": "comment-hole",
   "version": "0.1.1",
-  "description": "Replace file content within commented tags",
+  "description": "Replace file content within commented tag holes",
   "author": "Renato Ribeiro <hi@rena.to> (https://rena.to)",
   "repository": {
     "type": "git",
