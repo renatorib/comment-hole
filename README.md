@@ -45,15 +45,15 @@ node scripts/update-readme.js
 
 ### `3` Done! File will be overwritten
 
-```md
+```diff
 ## Options
 
 We support following options:
 
 <!-- <options> -->
 
-<<Put anything generated here!>>
-
++<<Put anything generated here!>>
++
 <!-- </options> -->
 ```
 
