@@ -8,30 +8,34 @@
 
 <p align="center">Replace file content within commented tag holes</p>
 
+<br>
+<br>
+<br>
+
 ## Getting started
 
-### `1`: Create a hole in your file with comment tags
+### `1` Create a hole in your file with comment tags
 
 `README.md`:
 
 ```md
-# You cli!
+## Options
 
-## How to use:
+We support following options:
 
-<!-- <help> -->
+<!-- <options> -->
 
-<!-- </help> -->
+<!-- </options> -->
 ```
 
-### `2`: Run `replaceTag`
+### `2` Run `replaceTag`
 
 ```js
 // scripts/update-readme.ts
 import { replaceTag } from "comment-hole";
 
 replaceTag("README.md", {
-  help: "Put anything generated here!",
+  options: "<<Put anything generated here!>>",
 });
 ```
 
@@ -39,23 +43,24 @@ replaceTag("README.md", {
 tsx scripts/update-readme.js
 ```
 
-### `3`: Done! File will be overwritten
+### `3` Done! File will be overwritten
 
 ```md
-# You cli!
+## Options
 
-## How to use:
+We support following options:
 
-<!-- <help> -->
+<!-- <options> -->
 
-Put anything generated here!
+<<Put anything generated here!>>
 
-<!-- </help> -->
+<!-- </options> -->
 ```
 
-Whenever you run `replaceTag` **ANY** content between `<!-- <tag> -->` and `<!-- </tag> -->` will be replaced.
+> [!NOTE]
+> Whenever you run `replaceTag` **ANY** content between `<!-- <tag> -->` and `<!-- </tag> -->` will be replaced.
 
 ## Supported Extensions
 
-For now we only support `.md` and `.html` files through `<!-- <tag> --> ... <!-- </tag> -->` comments.  
+For now we only support `.md` and `.html`.  
 PRs are welcome!
