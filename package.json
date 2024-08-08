@@ -1,6 +1,6 @@
 {
   "name": "comment-hole",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Replace file content within commented tag holes",
   "author": "Renato Ribeiro <hi@rena.to> (https://rena.to)",
   "repository": {
@@ -23,7 +23,8 @@
     "default": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "prepack": "pnpm build"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",
