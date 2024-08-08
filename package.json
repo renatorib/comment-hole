@@ -1,0 +1,34 @@
+{
+  "name": "replace-tag",
+  "version": "0.1.1",
+  "description": "Replace file content within commented tags",
+  "author": "Renato Ribeiro <hi@rena.to> (https://rena.to)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatorib/replace-tag.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "replace-tag",
+    "markdown",
+    "replace",
+    "tag",
+    "automate",
+    "readme"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
