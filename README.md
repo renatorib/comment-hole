@@ -31,7 +31,7 @@ We support following options:
 ### `2` Run `replaceTag`
 
 ```js
-// scripts/update-readme.ts
+// scripts/update-readme.js
 import { replaceTag } from "comment-hole";
 
 replaceTag("README.md", {
@@ -40,7 +40,7 @@ replaceTag("README.md", {
 ```
 
 ```sh
-tsx scripts/update-readme.js
+node scripts/update-readme.js
 ```
 
 ### `3` Done! File will be overwritten
