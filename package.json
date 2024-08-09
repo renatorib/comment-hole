@@ -1,11 +1,11 @@
 {
   "name": "comment-hole",
-  "version": "0.1.2",
+  "version": "0.0.0-semantic-release",
   "description": "Replace file content within commented tag holes",
   "author": "Renato Ribeiro <hi@rena.to> (https://rena.to)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renatorib/replace-tag.git"
+    "url": "git+https://github.com/renatorib/comment-hole.git"
   },
   "license": "MIT",
   "keywords": [
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/node": "^22.1.0",
     "prettier": "^3.3.3",
+    "semantic-release": "^24.0.0",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   }
