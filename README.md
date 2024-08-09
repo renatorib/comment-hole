@@ -10,7 +10,6 @@
 
 <br>
 <br>
-<br>
 
 ## Getting started
 
@@ -58,7 +57,7 @@ We support following options:
 ```
 
 > [!NOTE]
-> Whenever you run `replaceTag` **ANY** content between `<!-- <tag> -->` and `<!-- </tag> -->` will be replaced.
+> Whenever you run `replaceTag` **ANY** content between the hole tags will be replaced.
 
 ## Supported Extensions
 
